@@ -14,7 +14,7 @@ To run this project you will need use java 8 or higher, you can configure this i
 Only ```GET``` and ```POST``` methods are supported yet.
 
 
-To know how use, look at the bellow example.
+To know how use, look at the example below.
 
 ```
 Lazuli lazuli = new Lazuli();
