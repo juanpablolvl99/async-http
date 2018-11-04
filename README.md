@@ -26,7 +26,7 @@ headers.put("X-Riot-Token", "{token}");
 // passing headers to be added to the connection
 lazuli.setHeaders(headers);
 // make a GET request
-lazuli.get("https://br1.api.riotgames.com/lol/summoner/v3/summoners/by-name/3vilknight", (Consumer<String>) (String response) -> {
+lazuli.get("https://br1.api.riotgames.com/lol/summoner/v3/summoners/by-name/3vilknight", response -> {
     System.out.println(response);
 });
 // this method forces the request to close even if doesn't completed.
