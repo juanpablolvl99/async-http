@@ -4,17 +4,17 @@
 
 To run this project you will need use java 8 or higher, you can configure this in you pom.xml file.
 ``` 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 ```
 
 Only ```GET``` and ```POST``` methods are supported yet.
 
 
-To know how use, look at the bellow example.
+To know how use, look at the example below.
 
 ```
 Lazuli lazuli = new Lazuli();
