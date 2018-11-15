@@ -61,6 +61,8 @@ public class Lazuli {
                     .toString();
         }
         request(new URL(url), null, callback);
+        //clean parameters
+        this.parameters.clear();
     }
 
     // do a POST request
@@ -76,6 +78,8 @@ public class Lazuli {
             }
         }
         request(new URL(url), data, callback);
+        //clean parameters
+        this.parameters.clear();
     }
 
     private void request(URL url, byte[] data, Consumer callback) {
@@ -86,6 +90,9 @@ public class Lazuli {
                 this.headers.entrySet().stream().forEach(entry -> {
                     connection.setRequestProperty(entry.getKey(), entry.getValue());
                 });
+                // clean headers
+                this.headers.clear();
+                //
                 if (data != null) {
                     connection.setDoOutput(true);
                     OutputStream otpStream = connection.getOutputStream();
