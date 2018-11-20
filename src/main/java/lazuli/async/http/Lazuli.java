@@ -26,7 +26,7 @@ public class Lazuli {
     public Lazuli() {
     }
 
-    private void request(String method, String url, Map<String, String> params, Map<String, String> headers, Consumer callback) {
+    public void request(String method, String url, Map<String, String> params, Map<String, String> headers, Consumer callback) {
         Map.Entry<String, byte[]> entry = null;
         try {
             entry = HttpMethod.valueOf(method.toUpperCase()).handleData(url, params);
